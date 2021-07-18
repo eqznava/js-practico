@@ -1,11 +1,12 @@
 body{
     margin: 0px;
     font-family: 'Press Start 2P', cursive;
+    overflow-x: hidden;
 }
 
 header{
     text-align: center;
-    background-color: lightcyan;
+    background-color: #749BA8;
     height: 70px;
     line-height: 70px;
     border-bottom: 3px solid black;
@@ -18,10 +19,10 @@ header h1{
 .main{
     display: flex;
     width: 100%;
-    height: 88vh;
+    height: 80vh;
     justify-content: center;
     align-items: center;
-    background-color: lightskyblue;
+    background-color: #9DDEF5;
 }
 
 .card{
@@ -75,6 +76,7 @@ header h1{
     margin-left: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 15px black inset, 0px 0px 25px white inset;
+    margin-top: 30px;
 }
 
 .infoDiscount p{
@@ -84,29 +86,111 @@ header h1{
 }
 
 .right{
-    border: 1px solid black;
     width: 40%;
     height: 80%;
 }
 
-.button{
+.buttonDiscount{
     position: relative;
-    top: 130px;
+    top: 160px;
     left: 30px;
     width: 100px;
     height: 100px;
-    border: 1px solid #c73edb;
-    background-color: #c73edb;
+    border: 1px solid #F5B6C6;
+    background-color: #F5B6C6;
     box-shadow: 0px 0px 5px linen, 0px 2px 5px black;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    transition: all 300ms;
 }
 
-.button p{
+.buttonDiscount:hover{
+    transform: scale(1.1);
+}
+
+.buttonDiscount p{
     margin: 0px;
     font-size: 9px;
     text-align: center;
     line-height: 20px;
 }
+
+.buttonCupon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 10px;
+    left: 120px;
+    width: 100px;
+    height: 30px;
+    border: 1px solid #A86C7B;
+    border-radius: 20px;
+    background-color: #A86C7B;
+    box-shadow: 0px 0px 5px linen, 0px 2px 5px black;
+    transition: all 300ms;
+    cursor: pointer;
+}
+
+.buttonCupon:hover{
+    transform: scale(1.1);
+}
+
+.buttonCupon p{
+    margin: 0px;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.showMessage{
+    position: relative;
+    bottom: 160px;
+    left: 0px;
+    width: 200px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid #444;
+}
+
+.showMessage p{
+    text-align: center;
+    font-size: small;
+    color: #c73edb;
+}
+
+footer{
+    margin: 0px;
+    text-align: center;
+    background-color: #749BA8;
+    height: 85px;
+    line-height: 85px;
+    border-top: 3px solid black;
+}
+
+footer h3{
+    margin: 0px;
+}
+
+footer a{
+    margin: 0px;
+    text-decoration: none;
+    color: #F5F2CE;
+}
+
+footer h3 a span{
+    position: relative;
+    left: 330px;
+    transition: all 500ms;
+}
+
+footer h3 a:hover span{
+    left: 0px;
+}
+
+
+
