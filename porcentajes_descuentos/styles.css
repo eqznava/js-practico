@@ -80,9 +80,12 @@ header h1{
 }
 
 .infoDiscount p{
+    text-align: center;
     font-size: small;
     text-shadow: 0px 0px 5px white;
     margin: 0px;
+    padding: 5px;
+    font-size: smaller;
 }
 
 .right{
@@ -124,8 +127,8 @@ header h1{
     align-items: center;
     position: relative;
     bottom: 10px;
-    left: 120px;
-    width: 100px;
+    left: 30px;
+    width: 180px;
     height: 30px;
     border: 1px solid #A86C7B;
     border-radius: 20px;
@@ -141,7 +144,7 @@ header h1{
 
 .buttonCupon p{
     margin: 0px;
-    font-size: 12px;
+    font-size: 9px;
     letter-spacing: 2px;
 }
 

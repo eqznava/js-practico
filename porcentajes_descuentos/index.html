@@ -26,20 +26,22 @@
                         <input id="precioArticulo" class="one" type="number">
                         <label for="porcentajeDescuentoArticulo">Descuento del articulo</label>
                         <input id="porcentajeDescuentoArticulo" class="two" type="number">
+                        <label for="cuponDescuento">Código del cupon</label>
+                        <input id="cuponDescuento" class="three" type="text">
                     </div>
                     <div class="infoDiscount">
-                        <p>Test</p>
+                        <p id="infoPrice"></p>
                     </div>
                 </div>
                 <div class="right">
-                    <div class="buttonDiscount" onclick="CalcularDescuento()">
+                    <div class="buttonDiscount" onclick="calcularDescuento()">
                         <p>Aplicar Descuento</p>
                     </div>
-                    <div class="buttonCupon">
-                        <p>Cupon</p>
+                    <div class="buttonCupon" onclick="aplicarCupon()">
+                        <p>Verificar cupon</p>
                     </div>
                     <div class="showMessage">
-                        <p>✨🎊 30% extra del cupon 🎊✨</p>
+                        <p>✨🎊 <p id="messageCupon"></p> 🎊✨</p>
                     </div>
                 </div>
             </div>
