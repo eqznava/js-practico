@@ -12,3 +12,4 @@
 - Segundo paso: Implementar las formulas en JavaScript.
 - Tercer paso: Crear funciones. 
 - Cuarto paso: Integrar HTML con JS.
+- [Link Figuras](https://eqznava.github.io/js-practico/figuras/)
