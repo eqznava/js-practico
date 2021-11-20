@@ -120,7 +120,7 @@ header h1 {
 }
 
 .buttonDiscount:hover {
-    transform: scale(1.1);
+    transform: scale(1.02);
 }
 
 .buttonDiscount p {
@@ -148,7 +148,7 @@ header h1 {
 }
 
 .buttonCupon:hover {
-    transform: scale(1.1);
+    transform: scale(1.02);
 }
 
 .buttonCupon p {
@@ -166,7 +166,6 @@ header h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 3px solid #444;
 }
 
 .showMessage p {
@@ -359,4 +358,114 @@ footer h3 a:hover span {
     }
 }
 
-@media screen and (max-width:550px) {}
+@media screen and (max-width:550px) {
+    .main {
+        height: auto;
+    }
+    .card {
+        border: none;
+        border-radius: 0px;
+        box-shadow: none;
+    }
+    .title h3 {
+        font-size: 1em;
+    }
+    .right {
+        flex-direction: column;
+        margin-top: 15px;
+        padding-left: 45px;
+        align-items: baseline;
+        width: 80%;
+        gap: 10px;
+    }
+    .buttonDiscount p,
+    .buttonCupon p {
+        font-size: 0.8em;
+    }
+    .buttonDiscount {
+        left: 0px;
+        width: 75%;
+        height: 20px;
+        margin-left: 0px;
+        border-radius: 0px;
+    }
+    .buttonCupon {
+        width: 75%;
+        height: 20px;
+        margin-left: 0px;
+        border-radius: 0px;
+    }
+    footer h3 {
+        font-size: 0.6em;
+    }
+}
+
+@media screen and (max-width:530px) {
+    header h1 {
+        line-height: 30px;
+        font-size: 0.95em;
+    }
+}
+
+@media screen and (max-width:500px) {
+    header h1 {
+        font-size: 0.9em;
+    }
+    .buttonDiscount {
+        width: 66%;
+    }
+    .buttonCupon {
+        width: 65%;
+    }
+    .buttonDiscount p,
+    .buttonCupon p {
+        font-size: 0.6em;
+    }
+    footer h3 {
+        font-size: 0.55em;
+    }
+}
+
+@media screen and (max-width:425px) {
+    header h1 {
+        font-size: 0.85em;
+    }
+    .title h3 {
+        font-size: 0.8em;
+    }
+    .left {
+        width: 90%;
+    }
+    .right {
+        width: 90%;
+    }
+    .buttonDiscount p,
+    .buttonCupon p {
+        font-size: 0.5em;
+    }
+    footer h3 {
+        font-size: 0.45em;
+    }
+}
+
+@media screen and (max-width:375px) {
+    header h1 {
+        font-size: 0.75em;
+    }
+    .title h3 {
+        font-size: 0.75em;
+    }
+    .left {
+        width: 90%;
+    }
+    .right {
+        width: 90%;
+    }
+    .buttonDiscount p,
+    .buttonCupon p {
+        font-size: 0.5em;
+    }
+    footer h3 {
+        font-size: 0.4em;
+    }
+}
