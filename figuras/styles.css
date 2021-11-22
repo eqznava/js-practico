@@ -1,109 +1,215 @@
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header{
+header {
     text-align: center;
     border-bottom: 2px solid silver;
+    background-color: #FF2985;
+    color: blanchedalmond;
 }
 
-.main{
+header h1 {
+    margin-top: 0px;
+}
+
+.main {
     display: flex;
-    justify-content: center;
-    /* border: 1px solid black; */
-   margin: 0px auto;
-   padding-top: 15px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
+    padding-top: 15px;
+    background-color: #54E4FF;
+}
+
+form {
+    width: 80%;
+    background-color: rgba(255, 250, 205, 0.5);
+}
+
+.cuadrado>h4,
+.cuadrado>label,
+.cuadrado>input,
+.cuadrado>button {
+    width: 70%;
+    height: 35px;
+    font-size: 1.1em;
 }
 
 .cuadrado,
-.circulo{
+.circulo {
     text-align: center;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
+    align-items: center;
     margin: 15px;
     padding: 10px;
-    width: 300px;
-    height: 200px;
+    height: 20%;
     border-radius: 10px;
     box-shadow: 0px 0px 10px black;
 }
 
-.triangulo{
+.triangulo {
     text-align: center;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
+    align-items: center;
     margin: 15px;
     padding: 10px;
-    width: 400px;
-    height: 410px;
+    height: auto;
     border-radius: 10px;
     box-shadow: 0px 0px 10px black;
 }
 
-.trianguloIsosceles{
+.perimetro>label,
+.perimetro>input,
+.perimetro>button {
+    width: 70%;
+    height: 35px;
+    font-size: 1.1em;
+}
+
+.area>label,
+.area>input,
+.area>button {
+    width: 70%;
+    height: 35px;
+    font-size: 1.1em;
+}
+
+.trianguloIsosceles {
     text-align: center;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     margin: 15px;
     padding: 10px;
-    width: 400px;
-    height: 310px;
+    height: 30%;
     border-radius: 10px;
     box-shadow: 0px 0px 10px black;
 }
 
-.perimetro{
+.perimetro {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 15px;
+    width: 100%;
     padding: 10px;
     border-bottom: 1px solid gray;
 }
 
-.area{
+.area {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
-.triangulo h4{
+.triangulo h4 {
     margin-top: 5px;
     margin-bottom: 0px;
+    font-size: 1.1em;
 }
 
-.triangulo h5{
+.triangulo h5 {
     margin-top: 5px;
     margin-bottom: 5px;
+    font-size: 1.1em;
 }
 
-.triangulo label{
-    width: 65px;
-}
-
-.triangulo input{
-    width: 200px;
-}
-
-.triangulo button{
-    margin-top: 5px;
+.triangulo button {
+    margin-top: 15px;
+    font-size: 1.1em;
 }
 
 .cuadrado label,
-.circulo label{
-    font-size: 14px;
+.circulo label,
+.trianguloIsosceles label {
+    font-size: 1.1em;
 }
 
 .cuadrado input,
-.circulo input{
+.circulo input,
+.trianguloIsosceles input {
     margin: 5px;
+    width: 70%;
+    height: 35px;
+    font-size: 1.1em;
+}
+
+.trianguloIsosceles h4 {
+    font-size: 1.1em;
+}
+
+.trianguloIsosceles h5 {
+    font-size: 1em;
 }
 
 .trianguloIsosceles button,
 .cuadrado button,
-.circulo button{
+.circulo button {
     margin: 5px;
+    width: 70%;
+    height: 35px;
+    font-size: 1.1em;
+}
+
+input {
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    background-color: rgb(170 238 230);
+    border-bottom-color: #FF2985;
+}
+
+button {
+    text-transform: uppercase;
+}
+
+.footer {
+    border: 1px solid black;
+    border-left-style: none;
+    border-right-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #FF2985;
+}
+
+.footer h1 {
+    font-size: 1.8em;
+    color: lawngreen;
+}
+
+.footer a {
+    text-decoration: none;
+    color: floralwhite;
+}
+
+@media screen and (max-width:450px) {
+    .cuadrado button,
+    .triangulo button,
+    .circulo button,
+    .trianguloIsosceles button {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width:375px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+    .cuadrado label,
+    .triangulo label,
+    .circulo label,
+    .trianguloIsosceles label {
+        font-size: 0.8em;
+    }
 }
